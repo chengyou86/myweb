@@ -4,18 +4,41 @@
 <meta charset="BIG5">
 <title>html 5</title>
   <style>
-    body {background-color: grey;}
+    body {
+      background-color: grey;
+      margin:0px
+    }
     header {
       background-color:lightyellow;
       padding : 1em;
+       }
+     .myContainer {
+      margin: 0 auto;
+      width: 700px;
+    }
       text-align:center;
     }
     nav {
       background-color:cadetblue;
-      height: 40px;
-      color: white;
-      padding: 10px;
-     }
+      color:black;
+    font-size: 30px;
+    padding: 6px;}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 20px;
+      overflow: hidden;
+    }
+     li {
+      float: left;
+      width: 160px;
+      text-align: center;
+   }
+          aside {background-color: violet;
+      //height:200px;
+      width:150px;
+      float:left;
+    }
     section {
       background-color:aquamarine;
       margin-left: 130px
@@ -28,23 +51,35 @@
       float:left;
       margin: 30px 20px 10px 0px;
     }
-    aside {background-color: violet;
-      //height:200px;
-      width:150px;
-      float:left;
-    }
+   
     footer {background-color: lightsteelblue;
       clear:both;
     }
+    #myAddress {float: right;}
+    #myAddress p {text-align: right;}
   </style>
 </head>
   <body>
     <!--write your header here -->
-    <header>my header</header>
+    <header>my header
+    <div class="myContainer">
+        my header
+      </div> 
+    </header>
      
     <!--write your nav here -->
-    <nav>my nav</nav>
+    <nav>
+      <div class="myContainer">
+       <!-- my nav -->
+        <ul>
+          <li>Home</li>
+          <li>new</li>
+          <li>one</li>
+        </ul>
+      </div>    
+    </nav>
      
+     <div class="myContainer">
     <!--write your section here -->
     <section>my section
     <!--write your article here -->
@@ -53,19 +88,23 @@
       <article>my article 3</article>
       <article>my article 4</article>
     </section>
-    
+    </div>
      
     <!--write your aside here -->
     <aside>my aside</aside>
     
     <!--write your footer here -->
-    <footer>my footer
-      <img src="myQrCord.jpg">
+    <footer>
+      <div class="myContainer">
+        my footer
+    <img src="myQRcode.jpg" style="height: 110px;padding: 8px;">
       <div id="myAddress">
         <p>更新日期：2017年03月16日</p>
-        <p>校本部 高雄市84001大樹區學城路一段1號 Tel:(07)6577711</p>
-        <p>醫學院區 高雄市82445燕巢區角宿里義大路8號 Tel:(07)6151100</p>
-      </div>    
+       </div>
+     </div>
     </footer>
+    
     </body>
 </html>
+      
+    
